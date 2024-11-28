@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3a6186;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Weather Container */
+.weather-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 90%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Weather Card */
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Header Section */
+.weather-header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.city-name {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+    color: #ffdd59;
+}
+
+.current-date {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #f0e9d2;
+}
+
+/* Current Weather Details */
+.current-weather {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.weather-details div {
+    text-align: center;
+}
+
+.temperature,
+.humidity,
+.wind-speed {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ffdd59;
+}
+
+.label {
+    font-size: 0.9rem;
+    color: #f0e9d2;
+}
+
+/* Forecast Section */
+.forecast-section {
+    text-align: center;
+}
+
+.forecast-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f0e9d2;
+}
+
+.forecast-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.forecast-card {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.forecast-date {
+    font-size: 1rem;
+    margin: 0;
+    color: #ffdd59;
+}
+
+.forecast-temp {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-weight: bold;
+    color: #f0e9d2;
+}
+
+.forecast-humidity {
+    font-size: 0.9rem;
+    color: #f0e9d2;
+}
+
+.weather-detail {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    gap: 8px; /* Adjusts space between icon and text */
+  }
+  
+  .weather-icon {
+    width: 24px; /* Sets icon width */
+    height: 24px; /* Sets icon height */
+  }
+  
