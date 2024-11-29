@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getCurrentWeatherData, getWeeklyWeatherData } from '../api/axios';
+import { getCurrentWeatherData, getWeeklyWeatherData } from '../api/OpenWeatherData';
 import './weather.css';
 
 const Weather = () => {
