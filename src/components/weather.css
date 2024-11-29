@@ -10,8 +10,7 @@ body {
     height: 100vh;
 }
 
-/* Weather Container */
-.weather-container {
+.main-container {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -21,73 +20,91 @@ body {
     overflow: hidden;
 }
 
-/* Weather Card */
+/* Current weather content */
 .weather-card {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Header Section */
-.weather-header {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.weather-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
 .city-name {
-    font-size: 2rem;
-    margin: 0;
+    font-size: 1.5rem;
     font-weight: bold;
+    margin: 0;
+}
+
+.temperature-details {
+    text-align: right;
+}
+
+.temperature {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.feels-like {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #ddd;
+}
+
+/* similarity in info */
+.temperature,
+.feels_like {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
     color: #ffdd59;
 }
 
 .current-date {
+    font-size: 0.9rem;
+    color: #ccc;
     margin-top: 5px;
-    font-size: 1rem;
-    color: #f0e9d2;
 }
 
-/* Current Weather Details */
-.current-weather {
+/* current weather conditions*/
+.current-condition{
     display: flex;
     justify-content: space-around;
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
-.weather-details div {
-    text-align: center;
-}
-
-.temperature,
-.humidity,
-.wind-speed {
-    font-size: 1.5rem;
+.condition-info {
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
     color: #ffdd59;
+    text-align: center;
 }
 
-.label {
+
+.info-label {
     font-size: 0.9rem;
     color: #f0e9d2;
 }
 
-/* Forecast Section */
-.forecast-section {
-    text-align: center;
-}
+/* 5 day forecast */
 
-.forecast-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #f0e9d2;
-}
-
-.forecast-list {
+.five-day-forecast-container {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -109,6 +126,12 @@ body {
     color: #ffdd59;
 }
 
+.forecast-icon {
+    width: 70px;
+    height: 70px;
+    margin: 10px 0;
+}
+
 .forecast-temp {
     font-size: 1.2rem;
     margin: 5px 0;
@@ -120,15 +143,3 @@ body {
     font-size: 0.9rem;
     color: #f0e9d2;
 }
-
-.weather-detail {
-    display: flex;
-    align-items: center; /* Vertically centers the items */
-    gap: 8px; /* Adjusts space between icon and text */
-  }
-  
-  .weather-icon {
-    width: 24px; /* Sets icon width */
-    height: 24px; /* Sets icon height */
-  }
-  

@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <header>
-        <h1>Weather Forecast App</h1>
+        <h1 style={{ textAlign: 'center' }}>Weather Forecast App</h1>
       </header>
       <main>
         <Weather />
